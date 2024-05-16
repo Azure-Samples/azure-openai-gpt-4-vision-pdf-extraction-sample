@@ -1,13 +1,13 @@
 ---
 page_type: sample
 languages:
-- azurecli
-- bicep
-- powershell
-- csharp
+  - azurecli
+  - bicep
+  - powershell
+  - csharp
 products:
-- azure
-- azure-openai
+  - azure
+  - azure-openai
 name: Using Azure OpenAI GPT-4 Vision to extract structured JSON data from PDF documents
 description: This sample demonstrates how to use GPT-4 Vision to extract structured JSON data from PDF documents using Azure OpenAI.
 azureDeploy: https://raw.githubusercontent.com/Azure-Samples/azure-openai-gpt-4-vision-pdf-extraction-sample/main/infra/main.bicep
@@ -24,13 +24,13 @@ This approach takes advantage of the GPT-4 Vision model's ability to understand 
 - **Ability to extract data from complex documents**: GPT-4 Vision can extract structured data from complex documents, such as invoices, that contain tables, images, and other non-standard elements.
 
 > [!IMPORTANT]
-> GPT-4 Vision accrues charges like other Azure OpenAI models. You pay per-token rate for the prompts and completions. As of 2024-02-13, the GPT-4 Vision model costs $0.01 per 1000 tokens for input and $0.03 per 1000 tokens for output. For more information, see the [Azure OpenAI Service pricing](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/gpt-with-vision#special-pricing-information).
+> GPT-4 Vision accrues charges like other Azure OpenAI models. You pay per-token rate for the prompts and completions. As of 2024-05-16, the GPT-4 Vision model costs $0.01 per 1000 tokens for input and $0.03 per 1000 tokens for output. For more information, see the [Azure OpenAI Service pricing](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/gpt-with-vision#special-pricing-information).
 
 ## Components
 
 - [**Azure OpenAI Service**](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview), a managed service for OpenAI GPT models that exposes a REST API.
-- [**GPT-4 (vision-preview) model deployment**](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/gpt-with-vision?tabs=rest)
-  - **Note**: The GPT-4 Vision model is currently in preview and is not available in all regions. For more information, see the [Azure OpenAI Service documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#gpt-4-and-gpt-4-turbo-preview-model-availability).
+- [**GPT-4 with Vision (turbo-2024-04-09) model deployment**](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/gpt-with-vision?tabs=rest)
+  - **Note**: The GPT-4 with Vision model is not available in all Azure OpenAI regions. For more information, see the [Azure OpenAI Service documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#standard-deployment-model-availability).
 - [**Azure Bicep**](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep), used to create a repeatable infrastructure deployment for the Azure resources.
 
 ## Getting Started
