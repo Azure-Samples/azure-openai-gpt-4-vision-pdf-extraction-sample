@@ -8,7 +8,7 @@
   "Products": [
     {
       "Id": "PPR006",
-      "Description": "UNIT A4 80gsm",
+      "Description": "UNIV. A4 80gsm",
       "UnitPrice": 25.86,
       "Quantity": 5,
       "Total": 129.30,
@@ -24,24 +24,24 @@
     },
     {
       "Id": "ES40",
-      "Description": "SHIP LABEL 54x101mm",
+      "Description": "SHIP. LABEL 54x101mm",
       "UnitPrice": 136.00,
       "Quantity": 1,
       "Total": 136.00,
       "Reason": null
     },
     {
-      "Id": "KF1905099",
-      "Description": "RUBEL REFILL PAD A4",
+      "Id": "KF195099",
+      "Description": "RULED REFILL PAD A4",
       "UnitPrice": 13.22,
       "Quantity": 10,
       "Total": 132.20,
       "Reason": null
     },
     {
-      "Id": "JF9124138F",
+      "Id": "JF9912413BF",
       "Description": "BUBBLE FILM ROLL CL.",
-      "UnitPrice": 15.48,
+      "UnitPrice": 15.46,
       "Quantity": 12,
       "Total": 185.52,
       "Reason": null
@@ -55,7 +55,7 @@
       "Reason": null
     },
     {
-      "Id": "JKR001",
+      "Id": "JDK801",
       "Description": "C4 POCKET WINDOW",
       "UnitPrice": 71.29,
       "Quantity": 1,
@@ -63,7 +63,7 @@
       "Reason": null
     },
     {
-      "Id": "KF7030",
+      "Id": "KF030",
       "Description": "DL ENV. PEEL & SEAL",
       "UnitPrice": 18.83,
       "Quantity": 1,
@@ -72,7 +72,7 @@
     },
     {
       "Id": "JF7901",
-      "Description": "MAIL BOX 455x325x55",
+      "Description": "MAIL BOX 455x320x55",
       "UnitPrice": 38.54,
       "Quantity": 4,
       "Total": 154.16,
@@ -87,7 +87,7 @@
       "Reason": null
     },
     {
-      "Id": "STA086",
+      "Id": "ST4086",
       "Description": "BALLPOINT PEN MED.",
       "UnitPrice": 2.49,
       "Quantity": 10,
@@ -102,7 +102,7 @@
       "UnitPrice": null,
       "Quantity": 1,
       "Total": null,
-      "Reason": "Previous order replacement, wrong color."
+      "Reason": "This item was provided in previous orders as a replacement. Wrong color."
     },
     {
       "Id": "JF7902",
@@ -110,7 +110,7 @@
       "UnitPrice": null,
       "Quantity": 1,
       "Total": null,
-      "Reason": "Not required."
+      "Reason": "Not required"
     }
   ],
   "TotalQuantity": 66,
@@ -123,7 +123,7 @@
     },
     {
       "Type": "Driver",
-      "Name": "James T",
+      "Name": "James T.",
       "IsSigned": true
     }
   ],
@@ -135,7 +135,7 @@
     },
     {
       "Type": "Driver",
-      "Name": "James T",
+      "Name": "James T.",
       "IsSigned": true
     }
   ]
