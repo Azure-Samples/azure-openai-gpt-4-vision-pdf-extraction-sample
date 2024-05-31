@@ -1,0 +1,142 @@
+{
+  "InvoiceNumber": "3847193",
+  "PurchaseOrderNumber": "15931",
+  "CustomerName": "Sharp Consulting",
+  "CustomerAddress": "73 Regal Way, Leeds, LS1 5AB, UK",
+  "DeliveryDate": "2024-05-16T00:00:00",
+  "PayableBy": "2024-05-24",
+  "Products": [
+    {
+      "Id": "PPR006",
+      "Description": "UNIV. A4 80gsm",
+      "UnitPrice": 25.86,
+      "Quantity": 5,
+      "Total": 129.30,
+      "Reason": null
+    },
+    {
+      "Id": "3M12",
+      "Description": "NOTES 51x76mm Y",
+      "UnitPrice": 3.00,
+      "Quantity": 12,
+      "Total": 36.00,
+      "Reason": null
+    },
+    {
+      "Id": "ES40",
+      "Description": "SHIP. LABEL 54x101mm",
+      "UnitPrice": 136.00,
+      "Quantity": 1,
+      "Total": 136.00,
+      "Reason": null
+    },
+    {
+      "Id": "KF195099",
+      "Description": "RULED REFILL PAD A4",
+      "UnitPrice": 13.22,
+      "Quantity": 10,
+      "Total": 132.20,
+      "Reason": null
+    },
+    {
+      "Id": "JF9912413BF",
+      "Description": "BUBBLE FILM ROLL CL.",
+      "UnitPrice": 15.46,
+      "Quantity": 12,
+      "Total": 185.52,
+      "Reason": null
+    },
+    {
+      "Id": "ML10109",
+      "Description": "BUBBLE POSTAL BAG W",
+      "UnitPrice": 20.88,
+      "Quantity": 5,
+      "Total": 104.40,
+      "Reason": null
+    },
+    {
+      "Id": "JDK801",
+      "Description": "C4 POCKET WINDOW",
+      "UnitPrice": 71.29,
+      "Quantity": 1,
+      "Total": 71.29,
+      "Reason": null
+    },
+    {
+      "Id": "KF030",
+      "Description": "DL ENV. PEEL & SEAL",
+      "UnitPrice": 18.83,
+      "Quantity": 1,
+      "Total": 18.83,
+      "Reason": null
+    },
+    {
+      "Id": "JF7901",
+      "Description": "MAIL BOX 455x320x55",
+      "UnitPrice": 38.54,
+      "Quantity": 4,
+      "Total": 154.16,
+      "Reason": null
+    },
+    {
+      "Id": "MA197",
+      "Description": "STRETCHWRAP ROLL",
+      "UnitPrice": 16.62,
+      "Quantity": 5,
+      "Total": 83.10,
+      "Reason": null
+    },
+    {
+      "Id": "ST4086",
+      "Description": "BALLPOINT PEN MED.",
+      "UnitPrice": 2.49,
+      "Quantity": 10,
+      "Total": 24.90,
+      "Reason": null
+    }
+  ],
+  "Returns": [
+    {
+      "Id": "MA145",
+      "Description": "POSTAL TUBE BROWN",
+      "UnitPrice": null,
+      "Quantity": 1,
+      "Total": null,
+      "Reason": "This item was provided in previous orders as a replacement. Wrong color."
+    },
+    {
+      "Id": "JF7902",
+      "Description": "MAILBOX 25PK",
+      "UnitPrice": null,
+      "Quantity": 1,
+      "Total": null,
+      "Reason": "Not required"
+    }
+  ],
+  "TotalQuantity": 66,
+  "TotalPrice": 1075.70,
+  "ProductsSignatures": [
+    {
+      "Type": "Customer",
+      "Name": "Sarah H.",
+      "IsSigned": true
+    },
+    {
+      "Type": "Driver",
+      "Name": "James T.",
+      "IsSigned": true
+    }
+  ],
+  "ReturnsSignatures": [
+    {
+      "Type": "Customer",
+      "Name": "Sarah H.",
+      "IsSigned": true
+    },
+    {
+      "Type": "Driver",
+      "Name": "James T.",
+      "IsSigned": true
+    }
+  ]
+}
