@@ -40,7 +40,7 @@ function Set-ConfigurationFileVariable($configurationFile, $variableName, $varia
 
 Write-Host "Starting environment setup..."
 
-if ($SkipInfrastructure -eq '$false' -or -not (Test-Path -Path './infra/InfrastructureOutputs.json')) {
+if ($SkipInfrastructure -eq 'false') {
     Write-Host "Deploying infrastructure..."
     $InfrastructureOutputs = (./infra/Deploy-Infrastructure.ps1 `
             -DeploymentName $DeploymentName `
@@ -48,6 +48,12 @@ if ($SkipInfrastructure -eq '$false' -or -not (Test-Path -Path './infra/Infrastr
 }
 else {
     Write-Host "Skipping infrastructure deployment. Using existing outputs..."
+
+    if (-not (Test-Path './infra/InfrastructureOutputs.json')) {
+        Write-Error "The InfrastructureOutputs.json file does not exist. Please re-run the script with the `-SkipInfrastructure false` parameter."
+        exit 1
+    }
+
     $InfrastructureOutputs = Get-Content -Path './infra/InfrastructureOutputs.json' -Raw | ConvertFrom-Json
 }
 
