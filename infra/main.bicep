@@ -17,7 +17,7 @@ param tags object = {}
 
 @description('Principal ID of the user that will be granted access to the OpenAI service.')
 param userPrincipalId string
-@description('Primary location for the OpenAI service. Default is swedencentral for GPT-4 Vision support.')
+@description('Primary location for the OpenAI service. Default is swedencentral for GPT-4o support.')
 param openAILocation string = 'swedencentral'
 
 var abbrs = loadJsonContent('./abbreviations.json')
@@ -46,7 +46,7 @@ resource cognitiveServicesOpenAIUser 'Microsoft.Authorization/roleDefinitions@20
   name: roles.ai.cognitiveServicesOpenAIUser
 }
 
-var completionModelDeploymentName = 'gpt-4'
+var completionModelDeploymentName = 'gpt-4o'
 
 module openAI './ai_ml/openai.bicep' = {
   name: '${abbrs.ai.openAIService}${openAIResourceToken}'
@@ -60,12 +60,12 @@ module openAI './ai_ml/openai.bicep' = {
         name: completionModelDeploymentName
         model: {
           format: 'OpenAI'
-          name: 'gpt-4'
-          version: 'turbo-2024-04-09'
+          name: 'gpt-4o'
+          version: '2024-05-13'
         }
         sku: {
           name: 'Standard'
-          capacity: 50
+          capacity: 8
         }
       }
     ]
